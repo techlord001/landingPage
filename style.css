@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #EDF2F4;
+}
+
+#header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 20px 40px;
+	background-color: #2b2d42;
+}
+
+#header-img {
+	width: 200px;
+}
+
+#nav-bar {
+	float: right;
+}
+
+.nav-links {
+	list-style-type: none;
+}
+
+.link {
+	float: left;
+	margin: 0 20px;
+	margin-top: 5px;
+}
+
+.nav-link {
+	color: #edf2f4;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: larger;
+}
+
+.nav-link:hover {
+	color: #EF233C;
+}
+
+#explore {
+	text-align: center;
+}
+
+.imgs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	padding: 20px 0;
+}
+
+.img {
+	width: 300px;
+	border-radius: 20px;
+	border: 5px solid #2B2D42;
+	margin: 10px 0;
+}
+
+.img:hover {
+	border: 5px solid #EF233C;
+}
+
+#explore > h1, h2 {
+	padding: 30px 100px;
+}
+
+#explore > p {
+	padding: 30px 100px;
+}
+
+#video {
+	width: 480px;
+	height: 360px;
+	float: right;
+	margin: 20px 40px 0 40px;
+	border-radius: 20px;
+	border: 5px solid #2B2D42;
+}
+
+#details {
+	padding: 30px 100px;
+}
+
+#footer {
+	background-color: #8D99AE;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 40px;
+	margin-top: 20px;
+}
+
+#form {
+	color: #2B2D42;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	font-weight: 700;
+}
+
+#email, #submit {
+	font-family: inherit;
+	font-size: large;
+	margin: 10px 0;
+}
+
+#email {
+	height: 40px;
+	width: 400px;
+	padding: 0 10px;
+	border-radius: 20px;
+	border: 2px solid #2B2D42;
+}
+
+#submit {
+	color: #EDF2F4;
+	background-color: #D90429;
+	width: 200px;
+	height: 40px;
+	padding: 0 10px;
+	border-radius: 20px;
+}
+
+#submit:hover {
+	color: #EDF2F4;
+	background-color: #2B2D42;
+}
+
+@media (max-width: 700px) {
+	#header-img {
+		width: 100px;
+	}
+
+	.link {
+		margin: 0 10px;
+		font-weight: 400;
+		font-size: normal;
+		margin-top: 0;
+	}
+	
+	#video {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 500px) {
+	#header {
+		height: 15vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	#video {
+		width: 340px;
+		height: 220px;
+	}
+}
