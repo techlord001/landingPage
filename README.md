@@ -1,1 +1,1 @@
-# landingPage
+# sandiskLandingPage
